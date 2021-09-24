@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de financiamento</title>
+    <script src="simulador.js"></script>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Simulador de Financiamento</h1>
+      <!--Seção que receberá os dados para efetuar a simulação
+        Box de entrada de dados-->
+      <div class="entradas">
+        <div>
+          <label for="valor">Valor: </label>
+          <input type="number" id="valor" value="200000" />
+        </div>
+
+        <div>
+          <label for="prazo">Prazo: </label>
+          <input type="number" id="prazo" value="20" />
+        </div>
+
+        <div>
+          <label for="jurosano">Juros: </label
+          ><input type="number" id="jurosano" value="0.08" />
+        </div>
+
+        <!--Cria um botão-->
+        <button type="button" onclick="simular();">Simular</button>
+      </div>
+
+      <!--Seção de saída de dados, para mostrar o resultado-->
+      <h2>Resultados</h2>
+      <div class="entradas">
+        <div>
+          <label for="prestacoes">Prestações: </label>
+          <input type="number" id="prestacoes" readonly value="0" />
+        </div>
+
+        <div>
+          <label for="jurosmes">Taxa de Juros: </label>
+          <input type="number" id="jurosmes" readonly value="0" />
+        </div>
+
+        <div>
+          <label for="jurosapg">Juros a pagar: </label>
+          <input type="number" id="jurosapg" readonly value="0" />
+        </div>
+      </div>
+
+      <!--Criando a tabela de financiamento SAC-->
+      <table>
+        <thead>
+          <!--Cabeçalho da tabela-->
+          <tr>
+            <th>Prestação</th>
+            <th>Amortização</th>
+            <th>Juros</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+
+        <!--Criando o corpo da tabela-->
+        <div>
+          <tbody>
+            <tr>
+              <!--Cria a linha-->
+              <td>1</td>
+              <!--Cria a coluna/celula-->
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </div>
+      </table>
+    </main>
+    <!--Carregando JS na página-->
+  </body>
+</html>

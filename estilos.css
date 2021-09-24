@@ -1,0 +1,30 @@
+html {
+  font-family: Arial;
+}
+
+.entradas {
+  display: flex;
+  flex-direction: row;
+}
+
+.entradas > div {
+  margin-left: 16px;
+}
+
+h1,
+h2,
+th {
+  color: indigo;
+}
+
+body {
+  background-color: rgb(230, 211, 243);
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 16px;
+}
